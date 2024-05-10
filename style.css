@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-image: url(bible.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+main {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+
+/* it's the container box actually */
+
+article {
+    background-color: rgb(230, 200, 185);
+    opacity: 0.8;
+    padding: 20px;
+    /* margin-bottom: 20px; */
+    border-radius: 20px;
+    display: grid;
+}
+
+article p {
+    font-size: 30px;
+    font-weight: 450;
+    text-align: center;
+    padding: 30px;
+    isolation: isolate;
+}
+
+article button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    isolation: isolate;
+}
+
+article button:hover {
+    transform: scale(1.2);
+}
+
+
+/* responsive 3 column footer */
+
+footer {
+    background-color: rgb(230, 200, 185);
+    padding: 1em;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+}
+
+.footer-content {
+    text-align: left;
+}
+
+.footer-content h4 {
+    text-transform: uppercase;
+}
+
+.share-buttons ul {
+    list-style: none;
+    display: flex;
+}
+
+.share-buttons li {
+    display: inline-block;
+    padding: 0 5px;
+    margin-top: -60px;
+    opacity: 0.5;
+}
+
+.share-buttons li:hover {
+    opacity: 1;
+}
+
+.b1 {
+    border: 7px solid;
+    background-color: burlywood;
+}
+
+
+/* for tablet and phones */
+
+@media (max-width: 768px) {
+    main {
+        max-width: 80vw;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+    article p {
+        font-size: 22px;
+        font-weight: 450;
+        text-align: center;
+        padding: 10px;
+        isolation: isolate;
+    }
+    article button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        isolation: isolate;
+    }
+    article button:hover {
+        transform: scale(1.2);
+    }
+    footer {
+        background-color: rgb(230, 200, 185);
+        padding: 1em;
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 2.5rem;
+        font-size: small;
+    }
+    .footer-content {
+        text-align: left;
+    }
+    .share-buttons ul {
+        list-style: none;
+        display: flex;
+    }
+    .share-buttons li {
+        display: inline-block;
+        padding: 0 5px;
+        margin-top: -50px;
+        opacity: 0.5;
+    }
+    .share-buttons li:hover {
+        opacity: 1;
+    }
+}
